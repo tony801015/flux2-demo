@@ -1,6 +1,7 @@
 # Default values
 # https://github.com/bitnami/charts/blob/master/bitnami/redis/values.yaml
-usePassword: false
+auth:
+  enabled: false
 cluster:
   enabled: false
 master:
