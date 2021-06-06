@@ -1,23 +1,15 @@
-apiVersion: helm.toolkit.fluxcd.io/v2beta1
+apiVersion: helm.fluxcd.io/v1
 kind: HelmRelease
 metadata:
-  name: nginx
+  name: helm-nginx-ingress
+  namespace: nginx-ingress
 spec:
-  releaseName: nginx-ingress-controller
+  releaseName: nginx-ingress
+  targetNamespace: nginx-ingress
   chart:
-    spec:
-      chart: nginx-ingress-controller
-      sourceRef:
-        kind: HelmRepository
-        name: bitnami
-        namespace: flux-system
-      version: "5.6.14"
-  interval: 1m
-  install:
-    remediation:
-      retries: 3
-  # Default values
-  # https://github.com/bitnami/charts/blob/master/bitnami/nginx-ingress-controller/values.yaml
+    repository: https://kubernetes-charts.storage.googleapis.com/
+    name: nginx-ingress
+    version: 1.24.4
   values:
     service:
       type: NodePort
