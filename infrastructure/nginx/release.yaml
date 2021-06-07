@@ -9,8 +9,8 @@ spec:
       chart: nginx-ingress-controller
       sourceRef:
         kind: HelmRepository
-        name: ingress-nginx
-        namespace: ingress-nginx
+        name: nginx-harbor
+        namespace: flux-system
       version: "3.33.0"
   interval: 1m
   install:
