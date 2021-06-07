@@ -3,13 +3,14 @@ kind: HelmRelease
 metadata:
   name: ingress-nginx
 spec:
-  releaseName: ingress-nginx
+  releaseName: ingress-nginxA
   chart:
     spec:
       chart: ingress-nginx
       sourceRef:
         kind: HelmRepository
         name: nginx-harbor
+        namespace: ingress-nginx
       version: "3.33.0"
   interval: 1m
   install:
