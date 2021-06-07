@@ -10,7 +10,6 @@ spec:
       sourceRef:
         kind: HelmRepository
         name: nginx-harbor
-        namespace: ingress-nginx
       version: "3.32.0"
   interval: 1m
   install:
