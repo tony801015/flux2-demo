@@ -9,7 +9,7 @@ spec:
       sourceRef:
         kind: HelmRepository
         name: nginx-harbor
-        namespace: ingress-nginx
+        namespace: flux-system
       version: "3.32.0"
   interval: 1m
   install:
