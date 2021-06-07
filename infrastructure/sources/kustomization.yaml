@@ -3,4 +3,5 @@ kind: Kustomization
 namespace: flux-system
 resources:
   - podinfo.yaml
-  - harbor.yaml
+  - nginx-harbor.yaml
+  - cert-harbor.yaml
