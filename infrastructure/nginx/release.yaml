@@ -5,7 +5,7 @@ metadata:
 spec:
   chart:
     spec:
-      chart: ingress-nginx-co
+      chart: ingress-nginx
       sourceRef:
         kind: HelmRepository
         name: nginx-harbor
