@@ -4,4 +4,4 @@ metadata:
   name: nginx-harbor
 spec:
   interval: 30m
-  url: https://kubernetes.github.io/ingress-nginx
+  url: https://kubernetes.github.io
