@@ -6,13 +6,10 @@ spec:
   releaseName: cert-manager
   chart:
     spec:
-      chart: jetstack
+      chart: cert-manager
       sourceRef:
         kind: HelmRepository
         name: jetstack
         namespace: flux-system
       version: "v0.15.0"
   interval: 1m
-  install:
-    remediation:
-      retries: 3
