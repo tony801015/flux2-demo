@@ -5,10 +5,10 @@ metadata:
 spec:
   chart:
     spec:
-      chart: ingress-nginx
+      chart: ingress-nginx-co
       sourceRef:
         kind: HelmRepository
-        name: nginx-harbor-co
+        name: nginx-harbor
         namespace: flux-system
       version: "3.32.0"
   interval: 1m
